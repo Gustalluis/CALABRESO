@@ -26,6 +26,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 .site {
   max-width: 1200px; /* Largura max de 1200 px */
   width: 100%;
@@ -65,9 +69,7 @@ a {
 }
 
 /* ######### FAIXA MENU ############# */
-img {
-  width: 100%;
-}
+
 .faixaMenu div {
   display: flex;
   justify-content: space-between;
@@ -150,7 +152,31 @@ img {
   background: #a3a2ad;
   border: #e79924 solid 1px;
 }
-/*#### SESSÂO DE TERAPIA ##########*/
+
+/* ########## Banner ########## */
+
+.banner .slick-prev:before, /* .banner no começo faz com que só funcione noa classe banner*/
+.banner .slick-next:before
+{
+    font-size: 60px;
+    opacity: .75;
+    color: #b2360f;
+}
+
+.banner .slick-prev
+{
+    left: 5px;
+    z-index: 2;
+}
+
+.banner .slick-next
+{
+    right: 45px;
+}
+
+
+/* ########### Sessão Sobre ########### */
+
 .sobre {
   display: flex;
   justify-content: space-around;
@@ -163,16 +189,19 @@ img {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .sobre h2 {
   font-size: 2em;
   color: #e79924;
   font-weight: 700;
 }
+
 .sobre p {
   font-size: 1.5em;
   text-align: justify;
   line-height: 2em;
 }
+
 .sobre a {
   background: #e79924;
   padding: 5px 15px;
@@ -191,12 +220,13 @@ img {
 .sobre div:nth-child(2) img {
   width: 63%;
 }
+
 .sobre div:nth-child(2) img:nth-child(2) {
   align-self: flex-end;
   margin-top: -100px;
 }
 
-/* ############ SERVIÇO ##############*/
+/*######### SERVICO #################  */
 
 .servico {
   background: #333;
@@ -204,10 +234,10 @@ img {
 }
 
 .servico h2 {
-  text-align: center;
-  color: #e79924;
   font-size: 3em;
+  color: #e79924;
   font-weight: 700;
+  text-align: center;
   margin-bottom: 40px;
 }
 
@@ -215,12 +245,15 @@ img {
   display: flex;
   justify-content: space-around;
 }
+
 .servico div div div {
-  width: 30%;
+  margin: 0 5PX;
 }
+
 .servico a:hover {
   background: #b2360f;
 }
+
 .servico p {
   font-size: 1em;
   text-align: justify;
@@ -228,77 +261,98 @@ img {
   background: #333;
   padding: 20px;
 }
-.faixaservico {
+
+.faixaServico {
   background: #ccc;
   height: 200px;
-  margin-top: -6.49%;
-  border-top: solid thin #e79924;
+  margin-top: -7.4%;
+  border-top: solid thin #e79924; /*  */
 }
-/*########## Tecnologias ############*/
+
+/* ############### TECNOLOGIA ############### */
+
 .tec {
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
-/*titulo e paragrafo*/
-
-.tectopo {
+.tecTopo {
   display: flex;
   justify-content: space-around;
-}
-
-.tectopo h2 {
-  max-width: 500px;
-  font-size: 2.1em;
-  text-align: right;
-  text-transform: capitalize;
-}
-
-.tectopo div {
-  width: 45%;
-  justify-content: space-around;
-}
-
-/*área infografico*/
-
-.infografico {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
-}
-
-.boxEsquerda div, .boxDireita div {
-  display: flex;
-  height: 150px;
-  background: #333;
-  margin-top: 45px;
   align-items: center;
 }
 
-.boxEsquerda img, .boxDireita img{
-  padding: 10px;
+.tecTopo p {
+  font-size: 1.5em;
+  text-align: justify;
+  line-height: 1.5em;
+  width: 40%;
+}
+.tecTopo h2 {
+  font-size: 3.5em;
+  color: #e79924;
+  font-weight: 700;
+  text-align: center;
+  width: 40%;
+}
+
+.tecCorpo {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.tecCorpo > div {
+  width: 31%;
+}
+
+.tecBoxEsquerda div,
+.tecBoxDireita div {
+  display: flex; /*  */
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  margin: 55px 0;
+  height: 100px;
+}
+
+.tecBoxEsquerda p,
+.tecBoxDireita p {
+  font-size: 1em;
+  text-align: justify;
+  line-height: 1.5em;
+  color: #ccc;
+  padding: 10px 10px 10px 30px; /* */
+}
+
+.tecBoxEsquerda p {
+  padding: 10px 10px 10px 30px;
+}
+
+.tecBoxDireita p {
+  padding: 10px 30px 10px 10px;
+}
+
+.tecBoxEsquerda img,
+.tecBoxDireita img {
   position: relative;
+  height: auto;
+  width: 90px;
 }
 
-.boxEsquerda img {
-  margin-right: -50px;
+.tecBoxEsquerda img {
+  left: 20px;
 }
 
-.boxDireita img {
-  margin-left: -50px;
+.tecBoxDireita img {
+  right: 20px;
 }
 
-.boxEsquerda div div, .boxDireita div div{
-  color:#e79924;
-  margin: 20px; 
-  max-width: 250px;
-}
-
-/*###### Galaria #######*/
+/* ########## GALERIA ################# */
 
 .galeria {
   background: #333;
   padding: 40px 0;
-  
 }
 
 .galeria h2 {
@@ -309,16 +363,11 @@ img {
   color: #fff;
 }
 
-.galeria div {
-  display: flex;
-  overflow: hidden;
-  
-}
 .galeria img {
-  margin: 0 2%;
+  margin: 0 5px;
 }
 
-/*###### Fim galeria #######*/
+/* ############ DEPO ################### */
 
 .depo {
   padding: 40px 0;
@@ -342,142 +391,164 @@ img {
   width: 15%;
   margin-bottom: 1%;
 }
+
 .depo p {
   font-size: 1.8em;
   line-height: 1.8em;
   padding: 20px;
 }
 
-/*###### PROJETO #######*/
+/* ################# PROJETO ################## */
 
 .projeto {
   padding-top: 40px;
   background: #b2360f;
 }
- 
-.projeto div:nth-child(1) {
-  background: red;
-}
- 
+
 .projeto h2 {
   font-size: 3em;
   color: #fff;
   text-transform: uppercase;
 }
- 
-.projeto h4 {
+
+.projeto h4{
   font-size: 1.8em;
   color: #ccc;
   letter-spacing: .3em;
   margin-bottom: 3%;
 }
- 
-.boxProjeto {
+
+.boxProjeto{
   display: flex;
   justify-content: space-between;
 }
- 
-.boxProjeto div {
+
+.boxProjeto div{
   width: 30%;
   overflow: hidden;
 }
-.boxProjeto img {
+
+.boxProjeto img{
   display: block;
   height: auto;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
 
-.boxProjeto img:hover {
+.boxProjeto img:hover{
   transform: scale(1.2);
 }
 
-.boxProjeto div p {
+.boxProjeto div p{
   background: #333;
-  padding: 6%;
+  padding: 5%;
   font-size: 1.8em;
   line-height: 1.2em;
   text-align: justify;
   color: #fff;
 }
- 
+
+
 .faixaProjeto {
   background: #a3a2ad;
   height: 300px;
   margin-top: -250px;
 }
-/*########## LOGOS ############*/
 
-.logos {
+/* ######### LOGOS ################# */
+
+
+.logos{
   display: flex;
   padding: 40px 0;
   overflow: hidden;
 }
 
-.logos img {
+.logos img{
   margin: 0 5px;
 }
 
-/*########## FIM LOGO #########*/
-/*########## INICIO RODAPE #########*/
 
-.rodape {
+/* ########## RODAPÉ ################# */
+
+.rodape{
   background: #333;
   color: #fff;
   text-align: center;
 }
 
-.rodape > div {
+.rodape > div{
   display: flex;
   justify-content: space-between;
-  padding: 40px 0 ;
+  padding: 40px 0;
 }
 
-.rodape div div {
+.rodape div div{
   width: 30%;
 }
 
-.rodape div div h2 {
+.rodape p{
+  margin-top: 10%;
+  font-size: 1.5em;
+  line-height: 2em;
+  text-align: justify;
+}
+
+.rodape div div h2{
   margin-top: 35%;
   margin-bottom: 15%;
   font-size: 2.5em;
   text-transform: uppercase;
 }
 
-.rodape p{
-  font-size: 1.5em;
-  line-height: 1.2em;
-  text-align: justify;
-  margin-top: 10%;
+.rodape ul li a{
+  display: block;
+  padding: 10px 0;
 }
 
-.rodape ul li a {
- display: block;
- padding: 10px 0;
-}
-
-.rodape ul li a:hover {
+.rodape ul li a:hover{
+  background: #e79924;
   color: #333;
-  background:#e79924;
   border: #a3a2ad solid 1px;
-  border-radius:  10px 5px;
+  border-radius: 10px 5px;
 }
 
-.rodape div div div {
+.rodape div div div{
   width: 100%;
   text-align: left;
-
+  margin-bottom: 5%;
+  padding: 5% 0;
+  border-bottom: solid 1px #a3a2ad;
 }
 
-.rodape div div div h5 {
+.rodape div div div h5{
   font-size: 1.2em;
   color: #a3a2ad;
   font-style: italic;
   margin-bottom: 2%;
 }
 
-.rodape div div div h3 {
+.rodape div div div h3{
   font-size: 1.5em;
   text-align: justify;
   line-height: 1.4em;
 }
+
+
+.rodape > div:nth-child(2){
+  background: #000;
+  padding: 20px 0;
+  border-top: solid 1px #e79924;
+  box-shadow: 0px -4px 15px #e79924;
+}
+
+.rodape > div:nth-child(2) h2{
+  margin: 0 auto;
+}
+
+
+
+
+
+
+

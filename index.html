@@ -13,10 +13,15 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
 
-    <link rel="stylesheet" href="css/stylos.css" />
+    <!-- SLICK L-->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+    <link rel="stylesheet" href="css/estilo.css" />
   </head>
 
   <body>
+    <!-- Cabeçalho -->
     <header>
       <div class="faixa">
         <!-- Inicio: Faxa topo 01 (Email, End e Rede Social) -->
@@ -54,7 +59,6 @@
                 <img src="img/x.png" alt="X Oficina Auto Mestre" />
               </a>
             </li>
-            
           </ul>
         </div>
         <!-- Fim: Faxa topo 01 (Email, End e Rede Social) -->
@@ -73,192 +77,313 @@
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">Sobre</a></li>
-              <li> 
+              <li>
                 <a href="#">Serviço <span>+</span></a>
-                <ul class="subMenu"><!-- Sub Menu Serviço -->
+                <ul class="subMenu">
+                  <!-- Sub Menu Serviço -->
                   <li><a href="#">Serviços 1</a></li>
                   <li><a href="#">Serviços 2</a></li>
                   <li><a href="#">Serviços 3</a></li>
                   <li><a href="#">Serviços 4</a></li>
                   <li><a href="#">Serviços 5</a></li>
-                </ul><!-- Fim Sub Menu Serviço -->            
-              </li> 
+                </ul>
+                <!-- Fim Sub Menu Serviço -->
+              </li>
               <li><a href="#">Galeria</a></li>
               <li><a href="#">Contato</a></li>
             </ul>
             <a href="#">Orçamento</a>
           </nav>
-          <!-- Fim Menu -->          
+          <!-- Fim Menu -->
         </div>
       </div>
     </header>
-<!--###### CORPO DO SITE #########-->
-<section>
-    <img src="img/1920x600.png" alt="Banner Oficina Auto Mestre">
-</section>
-<main>
+    <!--Corpo -->
+    <section class="banner">
+      <img src="img/slide_1.png" alt="Banner Oficina Auto Metre">
+      <img src="img/slide_2.png" alt="Banner Oficina Auto Metre">
+      <img src="img/slide_3.png" alt="Banner Oficina Auto Metre">
+    </section>
 
- <!--####### SOBRE #######-->
-    <Article class="site">
-      <div class="sobre">
-        <div>
-        <img src="img/540x340.png" alt="Sobre Oficina Auto Mestre">
-        </div>
-        <div>
-        <h2>Sobre Oficina Auto Mestre</h2>
-        <p>Bem-vindo à Oficina Auto Mestre, o destino preferido para cuidar do seu veículo com expertise, comprometimento e qualidade excepcionais. Somos uma equipe dedicada de profissionais automotivos apaixonados por oferecer serviços de alta qualidade e atendimento personalizado.</P>
-          <a href="https://www.youtube.com/watch?v=CTYA1DoC7iY">Leia Mais</a>
-        </div>
-      </div>
-      <div class="sobre">
-        <div>
-        <h2>Sobre Oficina Auto Mestre</h2>
-        <p>Bem-vindo à Oficina Auto Mestre, o destino preferido para cuidar do seu veículo com expertise, comprometimento e qualidade excepcionais. Somos uma equipe dedicada de profissionais automotivos apaixonados por oferecer serviços de alta qualidade e atendimento personalizado.</P>
-          <a href="https://www.youtube.com/watch?v=CTYA1DoC7iY">Leia Mais</a>
-        </div>
-        <div>
-        <img src="img/340x240.png" alt="Sobre Oficina Auto Mestre">
-        <img src="img/340x240.png" alt="Sobre Oficina Auto Mestre">
-        </div>
-      </div>
-    </Article>
-<!--########## SERVIÇO #########-->
-    <article class="servico">
-      <div class="site">
-        <h2>Serviços Oficina Auto Mestre</h2>
-        <div>
+    <main>
+
+      <!-- SOBRE -->
+      <article class="site">
+        <div class="sobre">
           <div>
-            <a href="#" title="Serviço1">
-            <img src="img/360x200.png" alt="Revisão Preventiva Personalizada">
-            <p>Na Oficina Auto Mestre, oferecemos um serviço de revisão preventiva personalizada, adaptada às necessidades específicas...</p>
-          </a>
+            <img src="img/sobre_1.png" alt="Sobre Oficina Auto Mestre">
           </div>
           <div>
-            <a href="#" title="Serviço2">
-            <img src="img/360x200.png" alt="Troca de Óleo e Filtros de Alta Qualidade">
-            <p>Proporcionamos uma troca de óleo eficiente e precisa, utilizando os melhores produtos do mercado. Além disso, substituímos os filtros...</p>
-          </a>
-        </div>
-          <div>
-            <a href="#" title="Serviço3">
-            <img src="img/360x200.png" alt="Diagnóstico Eletrônico Avançado">
-            <p>Investimos em tecnologia de ponta para oferecer um serviço de diagnóstico eletrônico preciso e eficiente. Nossa equipe especializada...</p>
-          </a>
-        </div>
-        </div>
-      </div>
-      <div class="faixaservico">
-      </div>
-    </article>
-
-    <!--####### TECNOLOGIA ##########-->
-
-    <article>
-      <!--INICIO DO MEU PESADELO-->
-      <div class="site">
-        <div class="tec">
-          <div class="tectopo">
-            <!-- div1-->
-            <div>
-              <p>
-                Ao cuidar do seu veículo, a escolha das peças adequadas é
-                crucial para garantir sua segurança, desempenho e
-                durabilidade. Com tantas opções disponíveis no mercado, é
-                importante fazer.
-              </p>
-            </div>
-
-            <div>
-              <h2>Aqui você tem alta tecnologia para suas peças.</h2>
-            </div>
+            <h2>Sobre Oficina Auto Mestre</h2>
+            <p>
+              Bem-vindo à Oficina Auto Mestre, o destino preferido para cuidar do seu veículo com expertise, comprometimento e qualidade excepcionais. Somos uma equipe dedicada de profissionais automotivos apaixonados por oferecer serviços de alta qualidade e atendimento personalizado.
+            </p>
+            <a href="#">leia mais</a>
           </div>
+        </div>
 
-          <div class="infografico">
-            <!-- div2-->
-            <div class="boxEsquerda">
-              <div>
-                <div>
-                  <p>
-                    Bem-vindo à Oficina Auto Mestre, o destino preferido para
-                    cuidar do seu veículo com expertise, comprometimento e
-                    qualidade excepcionais.
-                  </p>
-                </div>
-                <img src="img/100x100.png" alt="Imagem Peça do Carro" />
-              </div>
+        <div class="sobre">
+          <div>
+            <h2>Sobre Oficina Auto Mestre</h2>
+            <p>
+              Bem-vindo à Oficina Auto Mestre, o destino preferido para cuidar do seu veículo com expertise, comprometimento e qualidade excepcionais. Somos uma equipe dedicada de profissionais automotivos apaixonados por oferecer serviços de alta qualidade e atendimento personalizado.
+            </p>
+            <a href="#">leia mais</a>
+          </div>
+          <div>
+            <img src="img/sobre_2.png" alt="Sobre Oficina Auto Mestre">
+            <img src="img/sobre_3.png" alt="Sobre Oficina Auto Mestre">
+          </div>
+        </div>
 
-              <div>
-                <div>
-                  <p>
-                    Bem-vindo à Oficina Auto Mestre, o destino preferido para
-                    cuidar do seu veículo com expertise, comprometimento e
-                    qualidade excepcionais.
-                  </p>
-                </div>
-                <img src="img/100x100.png" alt="Imagem Peça do Carro" />
-              </div>
+      </article>
 
-              <div>
-                <div>
-                  <p>
-                    Bem-vindo à Oficina Auto Mestre, o destino preferido para
-                    cuidar do seu veículo com expertise, comprometimento e
-                    qualidade excepcionais.
-                  </p>
-                </div>
-                <img src="img/100x100.png" alt="Imagem Peça do Carro" />
-              </div>
+      <!-- SERVICO -->
+      <article class="servico">
+        <div class="site">
+          <h2>Serviços Oficina Auto Mestre</h2>
+          <div>
+
+            <div>
+              <a href="#" title="Servços 01">
+                <img src="img/servico_1.png" alt="Revisão Preventiva Personalizada">
+                <p>Na Oficina Auto Mestre, oferecemos um serviço de revisão preventiva personalizada, adaptada às necessidades específicas...</p>
+              </a>
             </div>
 
             <div>
-              <!--imagem do meio-->
-              <img src="img/250x600.png" alt="Imagem Carro" />
+              <a href="#" title="Servços 02">
+                <img src="img/servico_2.png" alt="Troca de Óleo e Filtros de Alta Qualidade">
+                <p>Proporcionamos uma troca de óleo eficiente e precisa, utilizando os melhores produtos do mercado. Além disso, substituímos os filtros...</p>
+              </a>
             </div>
 
-            <div class="boxDireita">
-              <!--jogar aqui-->
-              <div>
-                <img src="img/100x100.png" alt="Imagem Peça do Carro" />
-                <div>
-                  <p>
-                    Bem-vindo à Oficina Auto Mestre, o destino preferido para
-                    cuidar do seu veículo com expertise, comprometimento e
-                    qualidade excepcionais.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <img src="img/100x100.png" alt="Imagem Peça do Carro" />
-                <div>
-                  <p>
-                    Bem-vindo à Oficina Auto Mestre, o destino preferido para
-                    cuidar do seu veículo com expertise, comprometimento e
-                    qualidade excepcionais.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <img src="img/100x100.png" alt="Imagem Peça do Carro" />
-                <div>
-                  <p>
-                    Bem-vindo à Oficina Auto Mestre, o destino preferido para
-                    cuidar do seu veículo com expertise, comprometimento e
-                    qualidade excepcionais.
-                  </p>
-                </div>
-              </div>
-
+            <div>
+              <a href="#" title="Servços 03">
+                <img src="img/servico_3.png" alt="Diagnóstico Eletrônico Avançado">
+                <p>Investimos em tecnologia de ponta para oferecer um serviço de diagnóstico eletrônico preciso e eficiente. Nossa equipe especializada...</p>
+              </a>
             </div>
+            
+            <div>
+              <a href="#" title="Servços 01">
+                <img src="img/servico_1.png" alt="Revisão Preventiva Personalizada">
+                <p>Na Oficina Auto Mestre, oferecemos um serviço de revisão preventiva personalizada, adaptada às necessidades específicas...</p>
+              </a>
+            </div>
+
+            <div>
+              <a href="#" title="Servços 02">
+                <img src="img/servico_2.png" alt="Troca de Óleo e Filtros de Alta Qualidade">
+                <p>Proporcionamos uma troca de óleo eficiente e precisa, utilizando os melhores produtos do mercado. Além disso, substituímos os filtros...</p>
+              </a>
+            </div>
+
+            <div>
+              <a href="#" title="Servços 03">
+                <img src="img/servico_3.png" alt="Diagnóstico Eletrônico Avançado">
+                <p>Investimos em tecnologia de ponta para oferecer um serviço de diagnóstico eletrônico preciso e eficiente. Nossa equipe especializada...</p>
+              </a>
+            </div>           
 
           </div>
           
+
+        </div>
+
+        <div class="faixaServico"></div>
+      </article>
+
+      <!-- TECNOLOGIA -->
+      <article class="tec">
+        <div class="site">
+
+          <div class="tecTopo">
+            <p>Bem-vindo à Oficina Auto Mestre, o destino preferido para cuidar do seu veículo com expertise, comprometimento e qualidade excepcionais.</p>
+            <h2>Tecnologia Oficina Auto Mestre</h2>
+          </div>
+
+          <div class="tecCorpo">
+
+            <div class="tecBoxEsquerda">
+              <div>
+                <p>Investimos em tecnologia de ponta para oferecer um serviço de diagnóstico eletrônico preciso e eficiente. Nossa equipe especializada...
+                </p>
+                <img src="img/tecnologia_2.png" alt="">
+              </div>
+              <div>
+                <p>Investimos em tecnologia de ponta para oferecer um serviço de diagnóstico eletrônico preciso e eficiente. Nossa equipe especializada...
+                </p>
+                <img src="img/tecnologia_3.png" alt="">
+              </div>
+              <div>
+                <p>Investimos em tecnologia de ponta para oferecer um serviço de diagnóstico eletrônico preciso e eficiente. Nossa equipe especializada...
+                </p>
+                <img src="img/tecnologia_4.png" alt="">
+              </div>
+            </div>
+
+            <div>
+              <img src="img/tecnologia_1.png" alt="Tec Oficina Auto Mestre">
+            </div>
+
+            <div class="tecBoxDireita">
+              <div>
+                <img src="img/tecnologia_5.png" alt="">
+                <p>Investimos em tecnologia de ponta para oferecer um serviço de diagnóstico eletrônico preciso e eficiente. Nossa equipe especializada...
+                </p>
+              </div>
+              <div>
+                <img src="img/tecnologia_6.png" alt="">
+                <p>Investimos em tecnologia de ponta para oferecer um serviço de diagnóstico eletrônico preciso e eficiente. Nossa equipe especializada...
+                </p>
+              </div>
+              <div>
+                <img src="img/tecnologia_7.png" alt="">
+                <p>Investimos em tecnologia de ponta para oferecer um serviço de diagnóstico eletrônico preciso e eficiente. Nossa equipe especializada...
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </article>
+
+      <!-- GALERIA -->
+      <article class="galeria">
+        <h2>Galeria Oficina Auto Mestre</h2>
+
+        <div>
+          <img src="img/galeria/galeria-1.png" alt="Galeria Oficina Auto Mestre">
+          <img src="img/galeria/galeria-2.png" alt="Galeria Oficina Auto Mestre">
+          <img src="img/galeria/galeria-3.png" alt="Galeria Oficina Auto Mestre">
+          <img src="img/galeria/galeria-4.png" alt="Galeria Oficina Auto Mestre">
+          <img src="img/galeria/galeria-5.png" alt="Galeria Oficina Auto Mestre">
+          <img src="img/galeria/galeria-6.png" alt="Galeria Oficina Auto Mestre">
+          <img src="img/galeria/galeria-7.png" alt="Galeria Oficina Auto Mestre">
+        </div>
+
+      </article>
+
+      <!-- DEPO -->
+      <article class="depo">
+        <div class="site">
+          <h2>Depoimentos dos Alunos</h2>
+
+          <div>
+            <img src="img/depo-1.png" alt="Foto do aluno">
+            <p>Em apenas alguns meses, pude notar uma melhoria significativa na minha saúde física e mental. Sinto-me mais forte, mais enérgico e mais confiante do que nunca. Agradeço à equipe da Academia Viva Bem por me ajudar a alcançar esses resultados e por tornar minha jornada de fitness tão gratificante.</p>
+          </div>
+          
+        </div>
+      </article>
+
+      <article class="projeto">
+
+        <div class="site"> 
+
+          <h2>Projeto Oficina Auto Mestre</h2>
+          <h4>veja os projetos dos nossos cliente...</h4>
+
+          <div class="boxProjeto">
+            
+            <div>
+              <img src="img/projeto-1.png" alt="Projeto cliente">
+              <p>Na Oficina Auto Mestre, oferecemos um serviço de revisão preventiva personalizada, adaptada às necessidades específicas...</p>
+            </div>
+
+            <div>
+              <img src="img/projeto-2.png" alt="Projeto cliente">
+              <p>Na Oficina Auto Mestre, oferecemos um serviço de revisão preventiva personalizada, adaptada às necessidades específicas...</p>
+            </div>
+
+            <div>
+              <img src="img/projeto-3.png" alt="Projeto cliente">
+              <p>Na Oficina Auto Mestre, oferecemos um serviço de revisão preventiva personalizada, adaptada às necessidades específicas...</p>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+        <div class="faixaProjeto">
+         
+        </div>
+
+      </article>
+
+      <article class="logos">
+
+        <img src="img/logos/logo-1.png" alt="Logo Montadoras">
+        <img src="img/logos/logo-2.png" alt="Logo Montadoras">
+        <img src="img/logos/logo-3.png" alt="Logo Montadoras">
+        <img src="img/logos/logo-4.png" alt="Logo Montadoras">
+        <img src="img/logos/logo-5.png" alt="Logo Montadoras">
+        <img src="img/logos/logo-6.png" alt="Logo Montadoras">
+        <img src="img/logos/logo-7.png" alt="Logo Montadoras">
+        <img src="img/logos/logo-8.png" alt="Logo Montadoras">
+        <img src="img/logos/logo-9.png" alt="Logo Montadoras">
+        <img src="img/logos/logo-10.png" alt="Logo Montadoras">
+
+      </article>
+
+    </main>
+
+    <footer class="rodape">
+
+      <div class="site">
+        
+        <div>
+          <img src="img/logo-auto-mestre.svg" alt="Logo Oficina Auto Mestre">
+          <p>Bem-vindo à Oficina Auto Mestre, o destino preferido para cuidar do seu veículo com expertise, comprometimento e qualidade excepcionais. Somos uma equipe dedicada de profissionais automotivos apaixonados por oferecer serviços de alta qualidade e atendimento personalizado.</p>
+        </div>
+        <div>
+          <h2>Links Importantes</h2>
+          <ul>
+            <li><a href="#">Link Serviços Oficina</a></li>
+            <li><a href="#">Link Serviços Oficina</a></li>
+            <li><a href="#">Link Serviços Oficina</a></li>
+            <li><a href="#">Link Serviços Oficina</a></li>
+            <li><a href="#">Link Serviços Oficina</a></li>
+            <li><a href="#">Link Serviços Oficina</a></li>
+            <li><a href="#">Link Serviços Oficina</a></li>
+          </ul>
+        </div>
+        <div>
+
+          <h2>News Oficina Auto Mestre</h2>
+
+          <div>
+            <h5>28 Fev. de 2024</h5>
+            <h3>Oficina Auto Mestre: Líder em Inovação Automotiva, Lança Novo Serviço de Manutenção Inteligente</h3>
+          </div>
+
+          <div>
+            <h5>25 Fev. de 2024</h5>
+            <h3>Auto Mestre na Vanguarda da Tecnologia: Revela Parceria para Desenvolver Veículos Autônomos</h3>
+          </div>      
+
         </div>
 
       </div>
-        <!--FIM DO MEU PESADELO-->
-    </article>
 
-</main>
-    </html>
+      <div>
+        <h2> &reg; Todos os direitos reservados - Alle Palmeira - SENAC SMP </h2>
+      </div>
+
+    </footer>
+
+    <!-- jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- SLICK JS-->
+    <script src="js/slick.min.js"></script>
+
+    <script src="js/animacoes.js"></script>
+
+  </body>
+    
+</html>
